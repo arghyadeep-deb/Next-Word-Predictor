@@ -22,6 +22,7 @@ The model learns contextual word patterns from classic literature and provides t
 - **Data Processing:** Text preprocessing  
 
 ## Project Structure
+```
 Holmes-Next-Word-Predictor/
 ├── api.py                # FastAPI backend
 ├── ui.py                 # Streamlit frontend
@@ -32,24 +33,28 @@ Holmes-Next-Word-Predictor/
 ├── Sherlock Holmes.txt   # Training dataset
 ├── .gitignore
 └── README.md
-
+```
 ## How to Run the Project
 
 ### 1. Install dependencies
 pip install torch fastapi uvicorn streamlit requests
 
 ### 2. Start the FastAPI backend
+```
 uvicorn api:app --reload
-
+```
 Backend runs at:
+```
 http://127.0.0.1:8000
-
+```
 Swagger UI:
+```
 http://127.0.0.1:8000/docs
-
+```
 ### 3. Run the Streamlit frontend
+```
 streamlit run ui.py
-
+```
 ## API Endpoints
 POST /predict – Predicts the next word based on input text
 
