@@ -2,7 +2,19 @@
 An LSTM-based Language Model that predicts the **next probable word** given an input text sequence using Natural Language Processing (NLP) and Deep Learning techniques.  
 The system is deployed end-to-end using **FastAPI** for the backend and **Streamlit** for the frontend.
 ---
+## Live Deployment
 
+- 🔗 **Frontend (Streamlit App):**
+```
+https://liteerature-next-word-predictor.streamlit.app/
+```
+- 🔗 **Backend API (FastAPI):**
+```
+https://literature-next-word-predictor.onrender.com/docs
+```
+The Streamlit frontend communicates with a FastAPI backend deployed on Render,  
+forming a production-style deep learning inference pipeline for next-word prediction.
+---
 ## About the Project
 This project demonstrates how a **deep learning–based language model** can be trained, evaluated, and deployed as a real-time application.  
 It focuses on **next-word prediction** using a **BiLSTM with Attention and POS embeddings**, enabling the model to learn contextual and grammatical patterns from large text corpora.
